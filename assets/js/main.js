@@ -1,7 +1,7 @@
-var years = "2012-08-02";
+var years = "2012-08-03";
 var parraf01 = "Ingeniero electrónico, con experiencia en el sector tecnológico por más de";
-var parraf02 = "años como Desarrollador de software full stack y soporte técnico, con conocimientos en lenguaje C# utilizando el framework .Net para el desarrollo y mantenimiento de aplicaciones de escritorio, servicios Windows y servicios web (web api, wcf), conocimientos con bases de datos de tipo SQL server y Oracle, conocimientos en desarrollo de sitios web con Aps.net MVC, lenguaje de etiquetas Html, hojas de estilos Css aplicando responsive design con bootstrap y foundation, conocimientos en arquitectura javascript, conocimiento en framework frontend basados en componentes como Angular6 y React js ejecutados sobre Node.js, conocimiento en el manejo de software para el control de código Git y Visual studio team services, conocimientos en desarrollo ágil (scrum), conocimientos en creación y administración de aplicaciones en la nube con Azure, conocimientos en el desarrollo e implementación del protocolo FIX, conocimientos en Matlab, LabView, Packet tracer, Multisim para el desarrollo de sistemas de telecomunicaciones, automatización y técnicas digitales.";
-var parraf03 = "Dentro de mis habilidades resalto la capacidad analítica, numérica para la resolución de problemas, disposición para el trabajo en equipo, mis cualidades y valores más resaltantes son la honestidad, la puntualidad responsabilidad, emprendimiento y paciencia, me gusta dar mi punto de vista para ser proactivo en el trabajo.";
+var parraf02 = "años como desarrollador de software full stack, con conocimientos en lenguaje C# utilizando el framework .Net para el desarrollo y mantenimiento de sitios web, de aplicaciones de escritorio, servicios Windows y servicios web (web api, wcf), desarrollo de sitios web con framework frontend basados en componentes como (Angular, Angular js y React js) ejecutados sobre Node.js, conocimientos en bases de datos de tipo SQL server y Oracle, desarrollo de sitios web con Aps.net MVC, lenguaje de etiquetas html y hojas de estilos css aplicando responsive design con bootstrap o foundation, conocimientos en arquitectura javascript, manejo de software para el control de código como Git y Visual studio team services, conocimientos en desarrollo ágil utilizando (scrum), creación y administración de aplicaciones en la nube con Azure, conocimientos en el desarrollo e implementación del protocolo FIX.";
+var parraf03 = "Dentro de mis habilidades resalto la busqueda de soluciones efectivas, rapidas y de alto impacto para evitar las consecuencias del error, tambien resalto mi disposición para el trabajo en equipo, mis cualidades y valores más resaltantes son la honestidad, la puntualidad responsabilidad, emprendimiento y paciencia, me gusta dar mi punto de vista para ser proactivo en el trabajo.";
 
 jQuery(document).ready(function($) {
     /*======= Skillset *=======*/
@@ -28,4 +28,17 @@ function getAge(dateString) {
         age--;
     }
     return age;
+}
+
+function downloadHV() {
+  var documentDownload = 'HOJADEVIDACAMILONAVARRETE.doc';
+  var urlNew = 'assets/documents/' + documentDownload;
+  var anchor = document.createElement('a');
+
+  anchor.href = urlNew;
+  anchor.download = documentDownload;
+
+  var evt = document.createEvent('MouseEvents');
+  evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+  anchor.dispatchEvent(evt);
 }
