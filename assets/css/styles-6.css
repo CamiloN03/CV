@@ -264,11 +264,11 @@ p {
 }
 
 .certificate:hover {
- -webkit-transform: scale(2.15);
- -moz-transform: scale(2.15);
- -o-transform: scale(2.15);
- border-radius: 5px;
- filter:none;
+  -webkit-transform: scale(1.65);
+  -moz-transform: scale(1.65);
+  -o-transform: scale(1.65);
+  border-radius: 5px;
+  filter:none;
 }
 
 .downloadHV:hover{
@@ -291,6 +291,9 @@ p {
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+  .certificate {
+    display: none;
   }
 }
 /* Small devices (tablets, 768px and up) */
