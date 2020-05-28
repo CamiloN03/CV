@@ -264,9 +264,9 @@ p {
 }
 
 .certificate:hover {
- -webkit-transform: scale(2.15);
- -moz-transform: scale(2.15);
- -o-transform: scale(2.15);
+ -webkit-transform: scale(1.15);
+ -moz-transform: scale(1.15);
+ -o-transform: scale(1.15);
  border-radius: 5px;
  filter:none;
 }
@@ -287,6 +287,9 @@ p {
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+  .certificate {
+    display: none;
   }
 }
 /* Small devices (tablets, 768px and up) */
